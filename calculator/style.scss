@@ -1,0 +1,92 @@
+// ****************************** 
+// Project Name : calculator
+// Guild : HackAtMUACM
+// Project Amin : Sumit SIngh
+
+// ************************ -->
+
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+body {
+  min-height: 100vh;
+  padding: 20px;
+  background: #fffff3;
+}
+.bg-dark {
+  background-color: rgb(23, 15, 65) !important;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  .content {
+    position: relative;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 10;
+    backdrop-filter: blur(15px);
+  }
+}
+.calculator {
+  position: relative;
+  display: grid;
+  .input {
+    grid-column: span 4;
+    height: 140px;
+    width: 350px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 30px;
+    background: transparent;
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    border-left: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  span {
+    display: grid;
+    place-items: center;
+    width: inherit;
+    height: 80px;
+    color: #fff;
+    font-weight: 400;
+    cursor: pointer;
+    font-size: 20px;
+    user-select: none;
+    transition: 0.5s;
+    &:hover {
+      transition: 0px;
+      background: rgba(255, 255, 255, 0.05);
+    }
+    &:active {
+      background: #fff;
+      color: #192f00;
+      font-size: 24px;
+      font-weight: 500;
+    }
+  }
+  .clear {
+    grid-column: span 2;
+    width: inherit;
+    background: rgba(255, 255, 255, 0.05);
+  }
+  .plus {
+    grid-row: span 2;
+    height: 150px;
+  }
+  .equal {
+    width: inherit;
+    background: rgba(255, 255, 255, 0.05);
+  }
+}

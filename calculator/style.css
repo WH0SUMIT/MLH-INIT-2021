@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  padding: 20px;
+  background: #fffff3;
+}
+
+.bg-dark {
+  background-color: #170f41 !important;
+}
+
+.container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 10px;
+}
+
+.container .content {
+  position: relative;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 10;
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+}
+
+.calculator {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+}
+
+.calculator .input {
+  grid-column: span 4;
+  height: 140px;
+  width: 350px;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 30px;
+  background: transparent;
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  border-left: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.calculator span {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  width: inherit;
+  height: 80px;
+  color: #fff;
+  font-weight: 400;
+  cursor: pointer;
+  font-size: 20px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.calculator span:hover {
+  -webkit-transition: 0px;
+  transition: 0px;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.calculator span:active {
+  background: #fff;
+  color: #192f00;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.calculator .clear {
+  grid-column: span 2;
+  width: inherit;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.calculator .plus {
+  grid-row: span 2;
+  height: 150px;
+}
+
+.calculator .equal {
+  width: inherit;
+  background: rgba(255, 255, 255, 0.05);
+}
+/*# sourceMappingURL=style.css.map */
